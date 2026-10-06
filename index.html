@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sangue3 — Game Systems for Unity</title>
+  <meta name="description" content="Sangue3 builds reusable, tested game systems for Unity: card game engines, RPG cores and the tooling around them.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">S3</span>Sangue3</a>
+      <nav class="nav">
+        <a href="index.html#assets">Assets</a>
+        <a href="support.html">Support</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Unity Asset Store Publisher</div>
+        <h1>Game systems made easy</h1>
+        <p>Reusable, tested building blocks for Unity games — from card game interactions to RPG combat math — extracted from more than ten years of shipping apps and games.</p>
+        <a class="btn btn-primary" href="#assets">See the assets</a>
+        <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+
+    <section id="assets">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Assets</h2>
+          <p>Each package is split into small assemblies, so you take only what your game needs.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Card Kit</h3>
+            <p>A game-agnostic card engine. Bring your own card data, rules and art, and skin it.</p>
+            <ul>
+              <li>Pure C# rules core: board, lanes, effects, turn resolution, AI what-if simulation</li>
+              <li>Card feel: tilt, foil, drag &amp; drop, flips, pack opening, dissolve</li>
+              <li>Game shell: settings, audio hub, save/load, localization, achievements, rebinding</li>
+              <li>Covered by automated tests</li>
+            </ul>
+            <div class="meta">
+              <span class="tag tag-gold">Coming soon</span>
+              <span class="tag">Unity 6</span>
+              <span class="tag">URP</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>RPG Core</h3>
+            <p>Engine-agnostic math for RPG combat, ready to plug into your own skills and damage types.</p>
+            <ul>
+              <li>Deterministic RNG for replays and saves</li>
+              <li>Added / increased / more modifier buckets</li>
+              <li>Mitigation formulas and hit rolls</li>
+              <li>Modifier lifecycle</li>
+            </ul>
+            <div class="meta">
+              <span class="tag">In development</span>
+              <span class="tag">Pure C#</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Also by Sangue3</h2>
+          <p>Games and apps built on the same foundations.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Guild of the Iron Charter</h3>
+            <p>A dark fantasy idle auto-battler that runs in the browser.</p>
+            <div class="meta"><a class="btn btn-ghost" style="margin:0" href="https://sangue3.github.io/Guild-of-the-Iron-Charter/">Play in the browser</a></div>
+          </article>
+          <article class="card">
+            <h3>LanCast</h3>
+            <p>Cast your phone or PC screen to your TV over Wi-Fi.</p>
+            <div class="meta"><a class="btn btn-ghost" style="margin:0" href="https://sangue3.github.io/LanCast-Install/">Download</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How the packages are built</h2>
+        </div>
+        <div class="features">
+          <div>
+            <h3>Logic without the engine</h3>
+            <p>Rules live in assemblies with no Unity references, so they run headless and are easy to test.</p>
+          </div>
+          <div>
+            <h3>Take only what you need</h3>
+            <p>Visuals, rules and app shell are separate. Use the card feel with your own rules, or the reverse.</p>
+          </div>
+          <div>
+            <h3>Documented and tested</h3>
+            <p>Every package ships with a full README, a changelog and an automated test suite.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="y">2026</span> Sangue3</span>
+      <span><a href="support.html">Support</a> &middot; <a href="contact.html">Contact</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
