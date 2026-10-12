@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porting a children's MRI simulator from Quest to Quest + Pico — Sangue3</title>
+  <meta name="description" content="A small VR MRI simulator for children, originally built for Meta Quest by the software's owners. We were subcontracted to make it run on both Meta Quest and Pico from one project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><span class="brand-mark">S3</span>Sangue3</a>
+      <nav class="nav">
+        <a href="../index.html#assets">Assets</a>
+        <a href="../work/index.html" aria-current="page">Work</a>
+        <a href="../support.html">Support</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <a class="back" href="index.html">&larr; All work</a>
+        <div class="eyebrow">Case study &middot; Client work</div>
+        <h1 style="max-width:22ch">Porting a children's MRI simulator from Quest to Quest + Pico</h1>
+        <p>A small VR MRI simulator for children, originally built for Meta Quest by the software's owners. We were subcontracted to make it run on both Meta Quest and Pico from one project.</p>
+        <dl class="cs-meta">
+          <div><dt>Client</dt><dd>The simulator's original developer, via subcontract</dd></div>
+          <div><dt>My role</dt><dd>Port and platform integration</dd></div>
+          <div><dt>Stack</dt><dd>Unity &middot; C# &middot; XR Interaction Toolkit</dd></div>
+          <div><dt>Platforms</dt><dd>Meta Quest + Pico</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap cs-body">
+        <h2>The job</h2>
+        <p>The simulator was built for Meta Quest only. The owners wanted it on Pico as well, without maintaining two separate projects.</p>
+
+        <h2>What it covered</h2>
+        <ul>
+          <li><strong>Engine upgrade.</strong> Moved the project to a newer Unity version.</li>
+          <li><strong>Interactions on XR Interaction Toolkit.</strong> Replaced the original Meta-specific interactions with XR Interaction Toolkit, so the same interaction code runs on both headsets.</li>
+          <li><strong>Dual-platform builds.</strong> Integrated the tooling needed to build the same project for Meta and Pico devices.</li>
+        </ul>
+        <p>Supporting both headsets from one codebase was a recurring need at the studio. Several projects shipped for Meta Quest and Pico together, and I maintained a series of enterprise Pico training modules over several releases.</p>
+
+        <div class="note">Client work under confidentiality. The client, product name and visuals are left out on purpose. The diagram shows how the system works, not what the product looks like.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="y">2026</span> Sangue3</span>
+      <span><a href="https://sangue3.itch.io/">itch.io</a> &middot; <a href="../support.html">Support</a> &middot; <a href="../contact.html">Contact</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

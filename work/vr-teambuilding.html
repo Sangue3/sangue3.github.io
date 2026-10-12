@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross-platform multiplayer VR team-building platform — Sangue3</title>
+  <meta name="description" content="The studio's largest R&amp;D project, publicly co-funded: groups meet in shared VR spaces as avatars and take on cooperative challenges, while people on desktop or phone watch and talk to them in real time.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><span class="brand-mark">S3</span>Sangue3</a>
+      <nav class="nav">
+        <a href="../index.html#assets">Assets</a>
+        <a href="../work/index.html" aria-current="page">Work</a>
+        <a href="../support.html">Support</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <a class="back" href="index.html">&larr; All work</a>
+        <div class="eyebrow">Case study &middot; Studio project</div>
+        <h1 style="max-width:22ch">Cross-platform multiplayer VR team-building platform</h1>
+        <p>The studio's largest R&amp;D project, publicly co-funded: groups meet in shared VR spaces as avatars and take on cooperative challenges, while people on desktop or phone watch and talk to them in real time.</p>
+        <dl class="cs-meta">
+          <div><dt>Owner</dt><dd>Studio R&amp;D, publicly co-funded</dd></div>
+          <div><dt>My role</dt><dd>Unity development: multiplayer and gameplay</dd></div>
+          <div><dt>Stack</dt><dd>Unity &middot; C# &middot; Photon PUN 2 &middot; voice chat</dd></div>
+          <div><dt>Platforms</dt><dd>Meta Quest &middot; PCVR &middot; Windows &middot; Android</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap cs-body">
+        <h2>What it is</h2>
+        <p>A multiplayer VR experience for companies. Teams join a shared session, each person embodied as an avatar, and progress through challenges that only work if the group cooperates.</p>
+
+        <h2>How sessions work</h2>
+        <ul>
+          <li><strong>Automatic lobby.</strong> Anyone with access to the app joins a shared lobby room automatically when they launch it.</li>
+          <li><strong>Teams formed in-game.</strong> Players split into teams inside the lobby, in VR, before the challenges start.</li>
+          <li><strong>Lobby per client.</strong> A second version separated the lobby by client and access type, so different companies' groups never met in the same room.</li>
+        </ul>
+
+        <h2>Cross-platform spectators</h2>
+        <p>A desktop and Android version let people outside VR follow a session live. They could switch between a god view and fixed security-camera angles, and talk to the players in VR over voice chat. VR, PC and smartphone clients all shared the same multiplayer session.</p>
+
+        <h2>Stack</h2>
+        <p>Unity and Photon PUN 2 for networking, with the same room logic serving VR headsets, Windows and Android.</p>
+        <div class="diagram" role="img" aria-label="Session flow: automatic lobby, in-game teams, and non-VR spectators connected to the same room.">
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow" d="M0,0 L10,5 L0,10 z"/></marker>
+  <marker id="aa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow-accent" d="M0,0 L10,5 L0,10 z"/></marker>
+</defs>
+  <rect class="box-gold" x="20" y="40" width="190" height="86" rx="10"/>
+  <text x="115" y="76" text-anchor="middle">Players with app access</text>
+  <text class="sub" x="115" y="98" text-anchor="middle">joined automatically</text>
+
+  <rect class="box-accent" x="270" y="30" width="200" height="106" rx="10"/>
+  <text x="370" y="66" text-anchor="middle">Lobby room (PUN 2)</text>
+  <text class="sub" x="370" y="88" text-anchor="middle">teams picked in-game</text>
+  <text class="sub" x="370" y="106" text-anchor="middle">variant: split by client / access</text>
+
+  <rect class="box" x="530" y="30" width="210" height="106" rx="10"/>
+  <text x="635" y="66" text-anchor="middle">Team sessions in VR</text>
+  <text class="sub" x="635" y="88" text-anchor="middle">avatars, cooperative challenges</text>
+  <text class="sub" x="635" y="106" text-anchor="middle">Quest / PCVR</text>
+
+  <rect class="box-gold" x="490" y="200" width="250" height="80" rx="10"/>
+  <text x="615" y="234" text-anchor="middle">Spectators on desktop / Android</text>
+  <text class="sub" x="615" y="256" text-anchor="middle">god view / security cams + voice chat</text>
+
+  <path class="wire" d="M212 83 H268" marker-end="url(#a)"/>
+  <path class="wire-accent" d="M472 83 H528" marker-end="url(#aa)"/>
+  <path class="wire-accent" d="M635 138 V198" marker-start="url(#aa)" marker-end="url(#aa)"/>
+</svg>
+        </div>
+        <p class="caption">Session flow: automatic lobby, in-game teams, and non-VR spectators connected to the same room.</p>
+        <div class="note">Client work under confidentiality. The client, product name and visuals are left out on purpose. The diagram shows how the system works, not what the product looks like.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="y">2026</span> Sangue3</span>
+      <span><a href="https://sangue3.itch.io/">itch.io</a> &middot; <a href="../support.html">Support</a> &middot; <a href="../contact.html">Contact</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

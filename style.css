@@ -140,3 +140,30 @@ section { padding: 64px 0; border-top: 1px solid var(--line); }
   .contact-box dl { grid-template-columns: 1fr; gap: 2px; }
   .contact-box dd { margin-bottom: 12px; }
 }
+
+/* Work / case studies */
+.cs-meta { display: grid; gap: 14px 28px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin: 8px 0 0; padding: 22px 0 0; border-top: 1px solid var(--line); max-width: 860px; }
+.cs-meta dt { color: var(--gold); text-transform: uppercase; letter-spacing: .12em; font-size: 12px; font-weight: 600; }
+.cs-meta dd { margin: 4px 0 0; color: var(--text); font-size: 15px; }
+.cs-body { max-width: 72ch; color: var(--muted); }
+.cs-body h2 { color: var(--text); font-size: 24px; margin-top: 8px; }
+.cs-body strong { color: var(--text); }
+.cs-body ul { padding-left: 20px; }
+.cs-body li { margin-bottom: 6px; }
+.diagram { margin: 28px 0 8px; background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; overflow-x: auto; }
+.diagram svg { display: block; width: 100%; min-width: 560px; height: auto; }
+.diagram svg .box { fill: #221e27; stroke: var(--line); stroke-width: 1.5; }
+.diagram svg .box-accent { fill: rgba(200, 50, 60, .14); stroke: var(--accent); stroke-width: 1.5; }
+.diagram svg .box-gold { fill: rgba(214, 178, 106, .1); stroke: var(--gold); stroke-width: 1.5; }
+.diagram svg text { fill: var(--text); font: 600 14px "Inter", system-ui, sans-serif; }
+.diagram svg text.sub { fill: var(--muted); font-weight: 400; font-size: 12px; }
+.diagram svg .wire { stroke: var(--muted); stroke-width: 1.5; fill: none; }
+.diagram svg .wire-accent { stroke: var(--accent-soft); stroke-width: 2; fill: none; }
+.diagram svg .arrow { fill: var(--muted); }
+.diagram svg .arrow-accent { fill: var(--accent-soft); }
+.caption { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
+.note { margin-top: 40px; padding: 16px 20px; border-left: 3px solid var(--gold); background: var(--bg-raised); border-radius: 0 10px 10px 0; color: var(--muted); font-size: 15px; }
+.card h3 a { color: var(--text); }
+.card h3 a:hover { color: var(--accent-soft); text-decoration: none; }
+.back { display: inline-block; margin-bottom: 18px; color: var(--muted); font-size: 15px; }
+.read-more { margin-top: 18px; font-weight: 600; font-size: 15px; }

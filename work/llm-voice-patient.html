@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice consultations with an LLM virtual patient — Sangue3</title>
+  <meta name="description" content="A VR medical-training scenario where trainees talk out loud to a virtual patient and get a spoken answer back, powered by OpenAI's speech-to-speech Realtime API soon after it was released.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><span class="brand-mark">S3</span>Sangue3</a>
+      <nav class="nav">
+        <a href="../index.html#assets">Assets</a>
+        <a href="../work/index.html" aria-current="page">Work</a>
+        <a href="../support.html">Support</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <a class="back" href="index.html">&larr; All work</a>
+        <div class="eyebrow">Case study &middot; Client work</div>
+        <h1 style="max-width:22ch">Voice consultations with an LLM virtual patient</h1>
+        <p>A VR medical-training scenario where trainees talk out loud to a virtual patient and get a spoken answer back, powered by OpenAI's speech-to-speech Realtime API soon after it was released.</p>
+        <dl class="cs-meta">
+          <div><dt>Client</dt><dd>Healthcare training company</dd></div>
+          <div><dt>My role</dt><dd>Unity integration: microphone capture, chunking and streaming</dd></div>
+          <div><dt>Stack</dt><dd>Unity &middot; C# &middot; WebSockets &middot; OpenAI Realtime API</dd></div>
+          <div><dt>Platform</dt><dd>VR</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap cs-body">
+        <h2>The problem</h2>
+        <p>Consultation training depends on conversation. Scripted dialogue trees limit what a trainee can ask, so the project used a large language model as the patient: the trainee speaks naturally and the patient answers by voice.</p>
+
+        <h2>What I built</h2>
+        <ul>
+          <li><strong>Early adoption.</strong> The integration used OpenAI's speech-to-speech Realtime API shortly after it first became available.</li>
+          <li><strong>Microphone capture in Unity.</strong> I captured the trainee's voice from the headset microphone inside Unity.</li>
+          <li><strong>Chunking and streaming.</strong> I split the audio into chunks and streamed them to GPT through a WebSocket layer that a colleague built, so the conversation runs in real time instead of waiting for whole recordings.</li>
+          <li><strong>Spoken replies in the scene.</strong> The model's audio reply plays back as the virtual patient's voice.</li>
+        </ul>
+
+        <h2>How it works</h2>
+        <p>The highlighted step is the part I owned: getting live microphone audio out of Unity in a form the realtime API accepts, fast enough for the exchange to feel like a conversation.</p>
+        <div class="diagram" role="img" aria-label="Audio path from the trainee's microphone to the model and back to the virtual patient.">
+<svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow" d="M0,0 L10,5 L0,10 z"/></marker>
+  <marker id="aa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow-accent" d="M0,0 L10,5 L0,10 z"/></marker>
+</defs>
+  <rect class="box-gold" x="20" y="30" width="150" height="80" rx="10"/>
+  <text x="95" y="64" text-anchor="middle">Trainee speaks</text>
+  <text class="sub" x="95" y="86" text-anchor="middle">headset microphone</text>
+
+  <rect class="box-accent" x="210" y="30" width="160" height="80" rx="10"/>
+  <text x="290" y="64" text-anchor="middle">Mic capture</text>
+  <text class="sub" x="290" y="86" text-anchor="middle">audio split into chunks</text>
+
+  <rect class="box" x="410" y="30" width="150" height="80" rx="10"/>
+  <text x="485" y="64" text-anchor="middle">WebSocket layer</text>
+  <text class="sub" x="485" y="86" text-anchor="middle">built by a colleague</text>
+
+  <rect class="box" x="600" y="30" width="140" height="80" rx="10"/>
+  <text x="670" y="64" text-anchor="middle">OpenAI</text>
+  <text class="sub" x="670" y="86" text-anchor="middle">Realtime API</text>
+
+  <rect class="box-gold" x="320" y="160" width="260" height="70" rx="10"/>
+  <text x="450" y="191" text-anchor="middle">Virtual patient answers by voice</text>
+  <text class="sub" x="450" y="212" text-anchor="middle">audio played back in the VR scene</text>
+
+  <path class="wire" d="M172 70 H208" marker-end="url(#a)"/>
+  <path class="wire-accent" d="M372 70 H408" marker-end="url(#aa)"/>
+  <path class="wire" d="M562 70 H598" marker-end="url(#a)"/>
+  <path class="wire" d="M670 112 V195 H582" marker-end="url(#a)"/>
+</svg>
+        </div>
+        <p class="caption">Audio path from the trainee's microphone to the model and back to the virtual patient.</p>
+        <div class="note">Client work under confidentiality. The client, product name and visuals are left out on purpose. The diagram shows how the system works, not what the product looks like.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="y">2026</span> Sangue3</span>
+      <span><a href="https://sangue3.itch.io/">itch.io</a> &middot; <a href="../support.html">Support</a> &middot; <a href="../contact.html">Contact</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
