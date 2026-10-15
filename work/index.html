@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Work — Sangue3</title>
-  <meta name="description" content="Selected Unity, VR and multiplayer work by Pedro Gomes.">
+  <title>Work experience — Sangue3</title>
+  <meta name="description" content="Work experience, skills and case studies of Pedro Gomes, senior Unity developer: VR/XR, gameplay and multiplayer.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -13,11 +13,11 @@
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="../index.html"><span class="brand-mark">S3</span>Sangue3</a>
+      <a class="brand" href="../index.html"><span class="brand-mark">S3</span><span class="brand-text">Sangue3</span></a>
       <nav class="nav">
-        <a href="../index.html#assets">Assets</a>
         <a href="../work/index.html" aria-current="page">Work</a>
-        <a href="../support.html">Support</a>
+        <a href="../games/index.html">Games</a>
+        <a href="../assets/index.html">Apps &amp; Assets</a>
         <a href="../contact.html">Contact</a>
       </nav>
     </div>
@@ -26,16 +26,71 @@
   <main>
     <div class="hero">
       <div class="wrap">
-        <div class="eyebrow">Work</div>
-        <h1>Selected work</h1>
-        <p>I'm Pedro Gomes, a senior Unity developer in Portugal. Since 2019 I've been the go-to Unity developer at an XR studio, building VR, AR and mixed reality for international clients. These case studies cover some of the systems I built. Client names and visuals are left out for confidentiality.</p>
-        <a class="btn btn-primary" href="../contact.html">Get in touch</a>
-        <a class="btn btn-ghost" href="https://sangue3.itch.io/">My games on itch.io</a>
+        <a class="back" href="../index.html">&larr; Home</a>
+        <div class="eyebrow">Work experience</div>
+        <h1>Seven years of shipping XR</h1>
+        <p>I'm Pedro Gomes, a senior Unity developer in Portugal. Since 2019 I've been the go-to Unity developer at an XR studio, building VR, AR and mixed reality for international clients in healthcare, industry, logistics, architecture and entertainment.</p>
+        <a class="btn btn-primary" href="#case-studies">Read the case studies</a>
+        <a class="btn btn-ghost" href="../contact.html">Get in touch</a>
       </div>
     </div>
 
-    <section>
+    <section id="experience">
       <div class="wrap">
+        <div class="section-head">
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="job rise">
+            <div class="job-head">
+              <h3>Senior Unity Developer</h3>
+              <span class="job-dates">Apr 2019 &ndash; Present</span>
+            </div>
+            <p class="job-org">WaveFunction VR &middot; Portugal &middot; intern until Jan 2020 with the same scope, full-time since Feb 2020</p>
+            <ul>
+              <li><strong>Unity technical owner.</strong> Hands-on in nearly every Unity project the studio took on (50+), responsible for architecture and implementation on most of them.</li>
+              <li><strong>Gameplay.</strong> Core gameplay for VR titles: hover racing, basketball, a multiplayer escape room, a shooting simulator and a minigame collection.</li>
+              <li><strong>Multiplayer.</strong> Networked VR with Photon PUN 2, including the studio's largest project (cross-platform team-building with desktop and Android spectators) and a multiplayer lab-training classroom with synced hand tracking.</li>
+              <li><strong>VR interaction.</strong> Grab, poke and UI systems, and a reusable hand-pose library I animated in Unity.</li>
+              <li><strong>Training simulations.</strong> Long-running medical, lab and mental-health apps, including real-time voice consultations with an LLM virtual patient, plus industrial and safety training.</li>
+              <li><strong>Platforms.</strong> Shipped to Meta Quest, Pico and PCVR, and ported a children's MRI simulator from Quest-only to Quest + Pico.</li>
+              <li><strong>Beyond code.</strong> Editor tools, reusable modules, MR/AR prototypes, and animation and integration support for the art and design teams.</li>
+            </ul>
+          </article>
+          <article class="job rise rise-2">
+            <div class="job-head">
+              <h3>BSc, Video Game Development Engineering</h3>
+              <span class="job-dates">2015 &ndash; 2018</span>
+            </div>
+            <p class="job-org" style="margin-bottom:0">Polytechnic University of C&aacute;vado and Ave (UPCA, formerly IPCA) &middot; Portugal</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Skills</h2>
+        </div>
+        <dl class="skills">
+          <dt>Engines</dt><dd>Unity (expert, up to Unity 6 / URP, Animator, Timeline) &middot; Unreal Engine 5 (working knowledge)</dd>
+          <dt>Language</dt><dd>C# (expert)</dd>
+          <dt>XR</dt><dd>Meta Quest, Pico, PCVR / SteamVR &middot; OpenXR &middot; Meta XR and Pico SDKs &middot; XR Interaction Toolkit &middot; hand tracking &middot; MR / AR</dd>
+          <dt>Multiplayer</dt><dd>Photon &middot; networked VR avatars and state sync &middot; session and lobby flow</dd>
+          <dt>Gameplay</dt><dd>Game systems, physics-based interaction, card-game AI, card / RPG / combat systems, UI and game feel</dd>
+          <dt>Engineering</dt><dd>Git &middot; editor tooling &middot; engine-independent C# architecture &middot; standalone-headset performance &middot; Android / WebGL / Windows builds</dd>
+          <dt>Languages</dt><dd>Portuguese (native) &middot; English (working language with international clients)</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="case-studies">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Case studies</h2>
+          <p>Some of the systems I built. Client names and visuals are left out for confidentiality.</p>
+        </div>
         <div class="grid">
           <article class="card">
             <h3><a href="vr-lab-classroom.html">Multiplayer VR lab-training classroom</a></h3>
@@ -68,8 +123,8 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; <span id="y">2026</span> Sangue3</span>
-      <span><a href="https://sangue3.itch.io/">itch.io</a> &middot; <a href="../support.html">Support</a> &middot; <a href="../contact.html">Contact</a></span>
+      <span>&copy; <span id="y">2026</span> Pedro Gomes &middot; Sangue3</span>
+      <span><a href="https://sangue3.itch.io/">itch.io</a> &middot; <a href="../support.html">Asset support</a> &middot; <a href="../contact.html">Contact</a></span>
     </div>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>

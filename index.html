@@ -3,121 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sangue3 — Game Systems for Unity</title>
-  <meta name="description" content="Sangue3 builds reusable, tested game systems for Unity: card game engines, RPG cores and the tooling around them.">
+  <title>Pedro Gomes (Sangue3) — Senior Unity Developer</title>
+  <meta name="description" content="Pedro Gomes, senior Unity developer in Portugal: VR/XR, gameplay and multiplayer. Work experience, games portfolio, apps and Unity assets.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>if (location.hash === '#assets') location.replace('assets/index.html');</script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html"><span class="brand-mark">S3</span>Sangue3</a>
+      <a class="brand" href="index.html"><span class="brand-mark">S3</span><span class="brand-text">Sangue3</span></a>
       <nav class="nav">
-        <a href="index.html#assets">Assets</a>
         <a href="work/index.html">Work</a>
-        <a href="support.html">Support</a>
+        <a href="games/index.html">Games</a>
+        <a href="assets/index.html">Apps &amp; Assets</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="hero">
+    <div class="hero hero-home">
       <div class="wrap">
-        <div class="eyebrow">Unity Asset Store Publisher</div>
-        <h1>Game systems made easy</h1>
-        <p>Reusable, tested building blocks for Unity games — from card game interactions to RPG combat math — extracted from 7+ years of shipping apps and games.</p>
-        <a class="btn btn-primary" href="#assets">See the assets</a>
-        <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+        <div class="eyebrow rise">Portugal &middot; open to remote</div>
+        <h1 class="rise rise-2">Pedro Gomes</h1>
+        <p class="role rise rise-2">Senior Unity Developer &middot; VR / XR &middot; Gameplay &amp; Multiplayer</p>
+        <p class="rise rise-3">7+ years shipping VR, AR and mixed reality games and apps for international clients, as the studio's go-to Unity developer. Outside work I make and release my own games and build tested Unity packages.</p>
+        <div class="links rise rise-3">
+          <a href="mailto:prdcgomes7@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+          <a href="https://www.linkedin.com/in/pedro7gomes"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.6h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.77 2.5 4.77 5.75V21h-4v-5.1c0-1.22-.02-2.78-1.8-2.78-1.8 0-2.08 1.33-2.08 2.7V21H9.5V9.75Z"/></svg>LinkedIn</a>
+          <a href="https://sangue3.itch.io/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="12" rx="4"/><path d="M7 11v4M5 13h4M15.5 12h.01M18 14h.01"/></svg>itch.io</a>
+        </div>
+        <div class="stats rise rise-4">
+          <div><b>7+</b><span>years in Unity</span></div>
+          <div><b>50+</b><span>studio Unity projects</span></div>
+          <div><b>3</b><span>XR platforms shipped</span></div>
+          <div><b>3</b><span>own games released</span></div>
+        </div>
       </div>
     </div>
 
-    <section id="assets">
+    <section class="doors-section" aria-label="Explore">
       <div class="wrap">
-        <div class="section-head">
-          <h2>Assets</h2>
-          <p>Each package is split into small assemblies, so you take only what your game needs.</p>
-        </div>
-        <div class="grid">
-          <article class="card">
-            <h3>Card Kit</h3>
-            <p>A game-agnostic card engine. Bring your own card data, rules and art, and skin it.</p>
-            <ul>
-              <li>Pure C# rules core: board, lanes, effects, turn resolution, AI what-if simulation</li>
-              <li>Card feel: tilt, foil, drag &amp; drop, flips, pack opening, dissolve</li>
-              <li>Game shell: settings, audio hub, save/load, localization, achievements, rebinding</li>
-              <li>Covered by automated tests</li>
-            </ul>
-            <div class="meta">
-              <span class="tag tag-gold">Coming soon</span>
-              <span class="tag">Unity 6</span>
-              <span class="tag">URP</span>
-            </div>
-          </article>
-          <article class="card">
-            <h3>RPG Core</h3>
-            <p>Engine-agnostic math for RPG combat, ready to plug into your own skills and damage types.</p>
-            <ul>
-              <li>Deterministic RNG for replays and saves</li>
-              <li>Added / increased / more modifier buckets</li>
-              <li>Mitigation formulas and hit rolls</li>
-              <li>Modifier lifecycle</li>
-            </ul>
-            <div class="meta">
-              <span class="tag">In development</span>
-              <span class="tag">Pure C#</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Also by Sangue3</h2>
-          <p>Games and apps built on the same foundations.</p>
-        </div>
-        <div class="grid">
-          <article class="card">
-            <h3>Guild of the Iron Charter</h3>
-            <p>A dark fantasy idle auto-battler that runs in the browser.</p>
-            <div class="meta"><a class="btn btn-ghost" style="margin:0" href="https://sangue3.github.io/Guild-of-the-Iron-Charter/">Play in the browser</a></div>
-          </article>
-          <article class="card">
-            <h3>LanCast</h3>
-            <p>Cast your phone or PC screen to your TV over Wi-Fi.</p>
-            <div class="meta"><a class="btn btn-ghost" style="margin:0" href="https://sangue3.github.io/LanCast-Install/">Download</a></div>
-          </article>
-          <article class="card">
-            <h3>More games on itch.io</h3>
-            <p>Prototypes, jam entries and other games, playable in the browser or as downloads.</p>
-            <div class="meta"><a class="btn btn-ghost" style="margin:0" href="https://sangue3.itch.io/">Browse on itch.io</a></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head">
-          <h2>How the packages are built</h2>
-        </div>
-        <div class="features">
-          <div>
-            <h3>Logic without the engine</h3>
-            <p>Rules live in assemblies with no Unity references, so they run headless and are easy to test.</p>
-          </div>
-          <div>
-            <h3>Take only what you need</h3>
-            <p>Visuals, rules and app shell are separate. Use the card feel with your own rules, or the reverse.</p>
-          </div>
-          <div>
-            <h3>Documented and tested</h3>
-            <p>Every package ships with a full README, a changelog and an automated test suite.</p>
-          </div>
+        <div class="doors">
+          <a class="door rise" href="work/index.html">
+            <span class="door-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+            <span class="eyebrow">Experience &middot; 4 case studies</span>
+            <h3>Work experience</h3>
+            <p>Seven years at an XR studio: multiplayer VR, hand tracking, medical and industrial training, LLM voice, Quest + Pico porting.</p>
+            <span class="meta"><span class="tag">Photon</span><span class="tag">VR / XR</span><span class="tag">Hand tracking</span></span>
+            <span class="go">See experience <i>&rarr;</i></span>
+          </a>
+          <a class="door rise rise-2" href="games/index.html">
+            <span class="door-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="12" rx="4"/><path d="M7 11v4M5 13h4M15.5 12h.01M18 14h.01"/></svg></span>
+            <span class="eyebrow">Portfolio &middot; playable</span>
+            <h3>Games</h3>
+            <p>My own games: card battlers, a roguelite, a browser idle game and an action RPG in development.</p>
+            <span class="thumbs">
+              <img src="https://img.itch.zone/aW1nLzI4MjQxMjkwLnBuZw==/315x250%23c/hmnRmR.png" alt="Riftveins: Underground Card League" loading="lazy">
+              <img src="https://img.itch.zone/aW1nLzI2MTQ2OTEyLnBuZw==/315x250%23c/VFcYfj.png" alt="Elvens" loading="lazy">
+              <img src="https://img.itch.zone/aW1nLzI1MDczNjIzLnBuZw==/315x250%23c/24n0SQ.png" alt="Rift Mayhem" loading="lazy">
+            </span>
+            <span class="go">See the games <i>&rarr;</i></span>
+          </a>
+          <a class="door rise rise-3" href="assets/index.html">
+            <span class="door-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg></span>
+            <span class="eyebrow">Tools &middot; Asset Store</span>
+            <h3>Apps &amp; assets</h3>
+            <p>Unity packages built from the same foundations (a card engine and RPG combat maths) plus a screen-casting app.</p>
+            <span class="meta"><span class="tag tag-gold">Assets coming soon</span><span class="tag">Unity 6</span><span class="tag">Pure C#</span></span>
+            <span class="go">See apps &amp; assets <i>&rarr;</i></span>
+          </a>
         </div>
       </div>
     </section>
@@ -125,8 +83,8 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; <span id="y">2026</span> Sangue3</span>
-      <span><a href="https://sangue3.itch.io/">itch.io</a> &middot; <a href="support.html">Support</a> &middot; <a href="contact.html">Contact</a></span>
+      <span>&copy; <span id="y">2026</span> Pedro Gomes &middot; Sangue3</span>
+      <span><a href="https://sangue3.itch.io/">itch.io</a> &middot; <a href="support.html">Asset support</a> &middot; <a href="contact.html">Contact</a></span>
     </div>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
