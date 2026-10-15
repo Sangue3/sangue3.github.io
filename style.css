@@ -272,3 +272,19 @@ section { padding: 64px 0; border-top: 1px solid var(--line); }
 .cover-gen svg { width: 42px; height: 42px; transition: transform .4s; }
 .cover-gen span { font-family: "Cinzel", Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.15; color: var(--text); letter-spacing: .04em; }
 .game-card:hover .cover-gen svg { transform: scale(1.08) rotate(-4deg); }
+
+/* Case-study screenshots */
+.shot { margin: 0 0 40px; }
+.shot img {
+  display: block; width: 100%; height: auto; max-height: 560px; object-fit: cover;
+  border-radius: var(--radius); border: 1px solid var(--line); background: var(--bg-raised);
+}
+.shot figcaption { color: var(--muted); font-size: 14px; margin-top: 10px; }
+.work-card { overflow: hidden; }
+.work-thumb { display: block; margin: -28px -28px 22px; aspect-ratio: 16 / 9; overflow: hidden; background: #1e1e1e; border-bottom: 1px solid var(--line); }
+.work-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+.work-card { transition: transform .25s cubic-bezier(.2, .8, .2, 1.2), border-color .2s; }
+.work-card:hover { transform: translateY(-4px); border-color: rgba(200, 50, 60, .55); }
+.work-card:hover .work-thumb img { transform: scale(1.04); }
+@media (prefers-reduced-motion: reduce) { .work-card, .work-thumb img { transition: none; } }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
